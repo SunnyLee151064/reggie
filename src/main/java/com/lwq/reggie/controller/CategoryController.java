@@ -44,6 +44,7 @@ public class CategoryController {
     public R<String> edit(@RequestBody Category category){
         log.info("修改分类信息");
         categoryService.updateById(category);
+        System.out.println("hello");
         return R.success("修改分类信息成功");
     }
 }
